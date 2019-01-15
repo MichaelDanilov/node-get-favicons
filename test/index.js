@@ -4,7 +4,7 @@ const test = require('ava');
 const getFavicons = require('../index');
 
 test('empty host', async (t) => {
-  const error = await t.throws(getFavicons.byUrl());
+  const error = await t.throws(() => { getFavicons.byUrl(); }, Error);
   t.is(error.message, 'Host must be non-zero string');
 });
 
