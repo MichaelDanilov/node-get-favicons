@@ -8,7 +8,7 @@ Get `favicon`s, `apple-touch-icon` or something else from any website or HTML.
 
 Get all favicons from [example.com](https://example.com)
 ```js
-const getFavicons = require('get-favicons');
+const getFavicons = require('node-get-favicons');
 
 getFavicons.byUrl('https://google.com').then((favicons) => {
   console.log(favicons);
